@@ -62,6 +62,7 @@ model Post {
   url   String
   site  String
   slug  String
+  body  String?
 
   userID String
   owner  User   @relation(fields: [userID], references: [id])
